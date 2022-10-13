@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <nav>
+      <div class="logo">
+        <big><i class="fa fa-people"></i></big>
+        <small>KPD</small>
+      </div>
+      <div>
+        <button  onclick="function toggleMenu()" class=" fa fa-bars manu-logo"></button>
+        <button  onclick="function hideMenu() " class=" fa fa-times manu-logo"></button>
+      </div>
+      <div class="hidden-manu" >
+          <a onclick="function Scroll2sec1()" id="hero">HOME</a>  
+          <a onclick="function Scroll2sec2()" id="about">ABOUT</a>
+          <a onclick="function Scroll2sec3()" id="wid">PAGES</a>
+          <a onclick="function Scroll2sec4()" id="pricing">SKLLS</a>
+          <a onclick="function Scroll2sec5()" id="pages">GALLERY</a>
+          <a onclick="function Scroll2sec6()" id="contact">CONTACT</a>
+      </div>
+    </nav>
+    <div class="row home">
+      <div class="col">
+        <div class="info">
+          <div class="semi-title cf-title">
+            Hello I'm
+          </div>
+          <div class="title">
+            Priyansh Khunt
+          </div>
+          <div class="sub-title">
+            Computer Engineering Student
+          </div>
+          <div class="contact-info">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            khuntpriyansh1@gmail.com
+            <br />
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            +91 94092-59856
+          </div>
+          <div class="social">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <img src="imgs/KPD_App.png" class="main-photo" alt="" />
+      </div>
+    </div>
+  </header>
+  <section class="about">
+    <div class="row">
+      <div class="col">
+        <img src="imgs/seo-home1.png" class="bulb" />
+      </div>
+      <div class="col">
+        <div class="info">
+          <div class="title-2">
+            About me
+          </div>
+          <div class="pera">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            earum quia illo minima esse similique repudiandae. Pariatur nulla
+            perspiciatis magni dolore fuga et, explicabo sapiente modi
+            accusamus aspernatur voluptate cumque similique fugiat illum
+            excepturi repudiandae!
+          </div>
+          <div class="links">
+            <a href="#">PHP</a>
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JAVA</a>
+            <br />
+            <br />
+            <a href="#">JS</a>
+            <a href="#">PYTHON</a>
+            <a href="#">C++</a>
+          </div>
+          <div class="btn">
+            <a href="#">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wid">
+    <div class="page-title">What I Do</div>
+    <div class="row">
+      <div class="col">
+        <div class="icon">
+          <i class="fa fa-bullseye" aria-hidden="true"></i>
+        </div>
+        <div class="sub-title">UI Design</div>
+        <div class="pera">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+          ut eaque quaerat, dolorem voluptatibus voluptatem cumque id sed a.
+          Repellat libero corrupti explicabo quibusdam possimus?
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="fa fa-code" aria-hidden="true"></i></div>
+        <div class="sub-title">Web Development</div>
+        <div class="pera">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          alias hic commodi maiores odio eos sequi ut facere iste? Molestias!
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon">
+          <i class="fa fa-android" aria-hidden="true"></i>
+        </div>
+        <div class="sub-title">App Development</div>
+        <div class="pera">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
+          dolores numquam tempore minima! Nulla, odio. Id, incidunt! Corrupti
+          sunt nam assumenda sequi velit corporis totam dignissimos at dolore.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="icon">
+          <i class="fa fa-database" aria-hidden="true"></i>
+        </div>
+        <div class="sub-title">Backend Development</div>
+        <div class="pera">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+          ut eaque quaerat, dolorem voluptatibus voluptatem cumque id sed a.
+          Repellat libero corrupti explicabo quibusdam possimus?
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="fa fa-cubes" aria-hidden="true"></i></div>
+        <div class="sub-title">Blockchain Development</div>
+        <div class="pera">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          alias hic commodi maiores odio eos sequi ut facere iste? Molestias!
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon">
+          <i class="fa fa-cogs" aria-hidden="true"></i>
+        </div>
+        <div class="sub-title">Machine Learning</div>
+        <div class="pera">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
+          dolores numquam tempore minima! Nulla, odio. Id, incidunt! Corrupti
+          sunt nam assumenda sequi velit corporis totam dignissimos at dolore.
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pages">
+    <div class="row">
+      <col>
+
+      <div class="row1">
+        <div class="sec-title">
+          Education
+        </div>
+        <div class="col">
+          <div class="pt">
+            <div class="txt">Web Development From</div>
+
+            <div class="color-t">edx</div>
+          </div>
+          <dd>2017-2018</dd>
+          <pera>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias consequatur ut quae fuga.
+            Beatae recusandae iusto explicabo mollitia quasi. Fugiat quibusdam, eos </pera>
+        </div>
+        <div class="col">
+          <div class="pt">
+            <div class="txt">App Development From</div>
+
+            <div class="color-t">corsera</div>
+          </div>
+          <dd>2017-2018</dd>
+          <pera>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias consequatur ut quae fuga.
+            Beatae recusandae iusto explicabo mollitia quasi. Fugiat quibusdam, eos </pera>
+        </div>
+        <div class="col">
+          <div class="pt">
+            <div class="txt">JAVA From</div>
+
+            <div class="color-t">udemy</div>
+          </div>
+          <dd>2018-2019</dd>
+          <pera>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias consequatur ut quae fuga.
+            Beatae recusandae iusto explicabo mollitia quasi. Fugiat quibusdam, eos </pera>
+        </div>
+
+      </div>
+      </col>
+      <col>
+      <div class="row1">
+        <div class="sec-title">
+          Work Experience </div>
+        <div class="col">
+          <div class="pt">
+            <div class="txt">Ui / Ux Designer at</div>
+
+            <div class="color-t">fiver</div>
+          </div>
+          <dd>2017-2018</dd>
+          <pera>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias consequatur ut quae fuga.
+            Beatae recusandae iusto explicabo mollitia quasi. Fugiat quibusdam, eos </pera>
+        </div>
+        <div class="col">
+          <div class="pt">
+            <div class="txt">Web Developer at</div>
+
+            <div class="color-t">freelancer.com</div>
+          </div>
+          <dd>2017-2018</dd>
+          <pera>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias consequatur ut quae fuga.
+            Beatae recusandae iusto explicabo mollitia quasi. Fugiat quibusdam, eos </pera>
+        </div>
+        <div class="col">
+          <div class="pt">
+            <div class="txt">App Devloper at</div>
+
+            <div class="color-t">upwork</div>
+          </div>
+          <dd>2018-2019</dd>
+          <pera>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias consequatur ut quae fuga.
+            Beatae recusandae iusto explicabo mollitia quasi. Fugiat quibusdam, eos </pera>
+        </div>
+
+      </div>
+      </col>
+    </div>
+  </section>
+  <section class="pricing">
+    <div class="sec-title">
+      Pricing Table
+    </div>
+    <div class="row">
+      <div class="col col-1">
+        <div class="p-logo"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+        <h1 class="txt">Full-Time Work</h1>
+        <h3 class="do">I am available for Full-time work</h3>
+        <h2 class="color-t">$1500</h2>
+        <div class="skills">
+          <div class="s">Web Development</div>
+          <div class="s">App Design</div>
+          <div class="s">Ui/Ux Design</div>
+          <div class="s">Advetising</div>
+        </div>
+        <div class="btn btn-1">
+          Hire Me
+        </div>
+      </div>
+      <div class="col col-2">
+        <div class="p-logo color-2"><i class="fa fa-file-text" aria-hidden="true"></i></div>
+        <h1 class="txt">Fixed Price Project</h1>
+        <h3 class="do">I am available for Fixed Price Project</h3>
+        <h2 class="color-t color-2">$500</h2>
+        <div class="skills">
+          <div class="s">Web Development</div>
+          <div class="s">App Design</div>
+          <div class="s">Ui/Ux Design</div>
+          <div class="s">Advetising</div>
+        </div>
+        <div class="btn btn-2">
+          Hire Me
+        </div>
+      </div>
+      <div class="col col-3">
+        <div class="p-logo color-3"><i class="fa fa-hourglass" aria-hidden="true"></i></div>
+        <h1 class="txt">Hourley Work</h1>
+        <h3 class="do">I am available for Hourley Project</h3>
+        <h2 class="color-t color-3">$50</h2>
+        <div class="skills">
+          <div class="s">Web Development</div>
+          <div class="s">App Design</div>
+          <div class="s">Ui/Ux Design</div>
+          <div class="s">Advetising</div>
+        </div>
+        <div class="btn btn-3">
+          Hire Me
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="fp">
+    <div class="sec-title">
+      Featured Posts
+    </div>
+    <div class="row">
+
+      <div class="col">
+        <div class="cover-img">
+          <img src="imgs/b-1.png">
+        </div>
+
+        <div class="pera"><sub>Exercising Makes all great</sub>
+          <div class="infoo">
+            Prost on <color> 2/8/2021</color> <br>
+            By <color> Priyansh</color>
+
+          </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ex rem incidunt suscipit nihil, placeat
+          impedit tempore ut! Hic, vitae. <color>Read More</color>
+        </div>
+      </div>
+      <div class="col">
+        <div class="cover-img">
+          <img src="imgs/b-2.png">
+        </div>
+
+        <div class="pera">
+          <sub>Promotion is much needed</sub>
+          <div class="infoo">
+            Prost on <color> 2/8/2021</color> <br>
+            By <color> Priyansh</color>
+
+          </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ex rem incidunt suscipit nihil, placeat
+          impedit tempore ut! Hic, vitae. <color>Read More</color>
+        </div>
+      </div>
+      <div class="col">
+        <div class="cover-img">
+          <img src="imgs/b-3.png">
+        </div>
+
+        <div class="pera"> <sub>Google starts Crawl & cloud gaming</sub>
+          <div class="infoo">
+            Prost on <color> 2/8/2021</color> <br>
+            By <color> Priyansh</color>
+
+          </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ex rem incidunt suscipit nihil, placeat
+          impedit tempore ut! Hic, vitae. <color>Read More</color>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="sec-title">
+      Contact Me
+    </div>
+    <div class="row row1">
+      <div class="col cc">
+        <div class="icon"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+        <div class="sub">Address</div>
+        <div class="contact-info">123 abcd , xyz city
+          <br> India</div>
+      </div>
+      <div class="col cc">
+        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+        <div class="sub">E-mail</div>
+        <div class="contact-info"> khuntpriyansh1@gmail.com
+          <br> khuntpriyanshpc@outlook.com</div>
+      </div>
+      <div class="col cc">
+        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+        <div class="sub">Phone</div>
+        <div class="contact-info">+91 94092 59856
+          <br> +91 74360 18715</div>
+      </div>
+    </div>
+    <div class="row row2">
+      <div class="col ct ct1">
+        <form action="form-handler.php" method="post">
+          <div class="oneline"><input type="text" name="name" placeholder="Enter first name" required />
+            <input type="text" name="name" placeholder="Enter last name" required /></div>
+
+          <input class="full-wid" name="email" type="email" placeholder="Enter your email address" required />
+          <input class="full-wid" type="text" name="sub" placeholder="Enter your subject" required />
+          <textarea class="full-wid" rows="8" name="massage" placeholder="Massage" required></textarea>
+          <button type="submit" class="btn red-btn">Send Massage</button>
+        </form>
+      </div>
+      <div class="col ct">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.791529348326!2d70.7815740930651!3d22.247987191289543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959caf3e9b92c9d%3A0xd1e141b691632933!2sRani%20Park%20Rd%2C%20Mavdi%2C%20Rajkot%2C%20Gujarat%20360004!5e0!3m2!1sen!2sin!4v1634022742009!5m2!1sen!2sin"
+          <!--width="600" height="450" --> style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+    </div>
+  </section>
+  <div class="scroll2top">
+    <i class="fa fa-arrow-up"></i>
+  </div>
+
+</body>
+
+</html>
