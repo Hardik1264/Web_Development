@@ -304,3 +304,33 @@ main {
     font-weight: bold;
   }
 }
+.form p,.form label{
+  color: black;
+  margin-bottom: 0;
+}
+.form {
+  width: 300px;
+  padding: 10px 10px 10px 50px;
+  margin: auto;
+  justify-content: cente;
+  background-color: white;
+  border-radius: 20px;
+  border: 5px solid rgb(76, 76, 76);
+  box-shadow: 5px 5px 20px white;
+}
+
+.form .button{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.form .button input{
+  padding: 10px;
+  background-color: rgb(189, 179, 179);
+  border: none;
+  margin-right: 60px;
+  border-radius: 10px;
+}
+.form input{
+  padding: 10px;
+}
