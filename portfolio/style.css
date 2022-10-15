@@ -700,3 +700,123 @@ form textarea:hover {
 .scroll2top .fa {
   pointer-events: none;
 }
+
+//adding media query
+
+@media (max-width: 900px) {
+  .manu {
+    display: none;
+  }
+  header nav {
+    padding: 0 50px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .home {
+    margin-top: 50px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0 75px;
+  }
+  .main-photo {
+    height: 30vh;
+  }
+  .home .col {
+    margin: 20px 0;
+  }
+  .info div {
+    margin: 10px 0;
+  }
+  .info .title {
+    font-size: 45px;
+  }
+  .info .sub-title {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+  .contact-info,
+  .social {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+}
+/* about */
+
+@media (max-width: 900px) {
+  .bulb {
+    height: 60vh;
+  }
+  .about {
+    margin-top: 50px;
+  }
+  .title-2 {
+    font-size: 35px;
+  }
+  .pera {
+    font-size: 13px;
+  }
+  .about .info {
+    width: 300px;
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .pages .row {
+    flex-direction: column;
+  }
+  .pages .row1 .col {
+    width: 80vw;
+    height: auto;
+  }
+  .pages {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  .wid {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .fp .row {
+    flex-direction: column-reverse;
+  }
+  .fp .row .col {
+    width: 300px;
+    height: auto;
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact .row1 {
+    flex-direction: column;
+    margin: 25px 0;
+  }
+  .contact .row2 {
+    flex-direction: column-reverse;
+    margin: 25px 0;
+  }
+  .contact .row .cc {
+    margin: 25px 0;
+  }
+  .contact .row2 .ct iframe {
+    width: 80vw;
+    height: 40vh;
+  }
+  form {
+    width: 80vw;
+  }
+  form .oneline {
+    flex-direction: column;
+  }
+  form .oneline input {
+    width: 100%;
+    margin: 8px 0;
+  }
+}
+
