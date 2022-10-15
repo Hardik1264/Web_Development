@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light/Dark mode practice Website</title>
+    <style>
+        body{
+            color: black;
+            background-color: white;
+            text-align: center;
+            align-items: center;
+        }
+        .dark-mode{
+            background-color: black;
+            color:white;
+        }
+        .light-mode{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Light and Dark Mode</h1>
+    
+    <p>This is a sample Website Text.Dark Mode Websites using Html CSS & Javascript</p>
+
+    <p id="text">Dark Mode is OFF</p>
+
+    <button onclick="darkmode()">Dark Mode</button>
+    <button onclick="lightmode()">Light Mode</button>
+
+    <script>
+        function darkmode(){
+            var ele = document.body;
+            var content = document.getElementById("text");
+            ele.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+        }
+
+        function lightmode(){
+            var ele = document.body;
+            var content = document.getElementById("text");
+            ele.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        }
+
+    </script>
+</body>
+</html>
