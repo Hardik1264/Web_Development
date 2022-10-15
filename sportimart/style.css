@@ -259,3 +259,95 @@ section {
   font-weight: lighter !important;
   font-size: 14px;
 }
+
+//adding media query
+
+
+@media (max-width: 800px) {
+  header nav .manu {
+    display: none;
+  }
+  .bar img {
+    display: inline;
+  }
+  header .row {
+    flex-direction: column;
+    margin: 0 50px;
+  }
+  header .row .col img {
+    height: 300px;
+  }
+  .photo-g {
+    flex-direction: column;
+  }
+  .pro {
+    flex-direction: column;
+  }
+  .pro .card img {
+    height: 350px;
+  }
+  .pro .card h3 {
+    font-size: 21px !important;
+  }
+  .rating {
+    font-size: 20px;
+  }
+  .price {
+    font-size: 17px !important;
+  }
+  header .row .col {
+  }
+  .title {
+    font-size: 25px;
+  }
+  .photo-g img {
+    height: 300px;
+    margin: 25px 50px;
+    padding: 0;
+  }
+  section {
+    padding: 25px !important;
+  }
+  .s-title {
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-bottom: 25px !important;
+  }
+  .Ex .row {
+    flex-direction: column;
+  }
+  div.col.col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .Ex .row .col img {
+    height: 300px;
+  }
+  .review .row {
+    flex-direction: column;
+  }
+  .review-card {
+    width: 270px;
+    margin: 25px;
+  }
+
+  .footer .col {
+    padding: 20px !important;
+  }
+
+  .footer .row {
+    flex-direction: column-reverse;
+    margin: 0px;
+  }
+  .footer .row .sub-title {
+    display: none;
+  }
+  .footer .row .col:nth-child(3),
+  .footer .row .col:nth-child(4) {
+    display: none;
+  }
+}
+
