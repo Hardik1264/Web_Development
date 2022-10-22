@@ -13,5 +13,10 @@
         "fruit": "Banana",
         "size": "Small",
         "color": "Yellow"
+    },
+    {
+        "fruit": "<Mango",
+        "size": "Small",
+        "color": "Yellow"
     }
 ]
