@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav
+{
+    background-color: rgb(0, 136, 255);
+    height: 80px;
+    width: 100%;
+}
+.logo
+{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 80px;
+    font-weight: bold;
+}
+ul
+{
+    float: right;
+    margin-right: 20px;
+}
+ul li
+{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+ul li a
+{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+a.active, a:hover
+{
+    background: #1b9bff;
+    transform: .5s;
+}
+.checkbtn
+{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:916px)
+{
+    label.logo
+    {
+        font-size: 30px;
+        padding-left: 40px;
+    }
+    ul li a
+    {
+        font-size: 16px;
+    }
+    .checkbtn
+    {
+        display: block;
+    }
+    ul
+    {
+        height: 100vh;
+        background-color: #2c3e50;
+        width: 100%;
+        margin: 0;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: none;
+    }
+    ul li
+    {
+        display: block;
+    }
+    ul li a
+    {
+        font-size: 20px;
+    }
+    a:hover, a.active
+    {
+        background: none;
+        color: #0082e6;
+    }
+}
+
+.disBlock
+{
+    display: block;
+}
