@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="" id="form">
+
+            <div class="ele">
+                <label class="name">Username :</label>
+                <input type="text" name="name" id="name" placeholder="Enter Username">
+                <div class="error" id="EroName">Username is Required</div>
+            </div>
+
+            <div class="ele">
+                <label class="email">E-mail :</label>
+                <input type="text" name="email" id="email" placeholder="Enter Email">
+                <div class="error" id="EroEmail">E-mail is Required</div>
+                <div class="error" id="EroEmailVali">Enter a Valid Email</div>
+            </div>
+
+            <div class="ele">
+                <label class="pass">Password :</label>
+                <input type="password" name="pass" id="pass" placeholder="Enter Password">
+                <div class="error" id="EroPass">Enter a Valid Password</div>
+            </div>
+            <input class="check" type="checkbox" id="check"><label>I read and agree to <span>Terms &
+                    Conditions</span></label>
+            <div class="error" id="EroCheck">Accept Terms & Conditions</div>
+            <button class="btn-grad submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
