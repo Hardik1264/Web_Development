@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cont">
+        <button type="button" id="gettext" class="btn btn-primary">GetText</button>
+        <button type="button" id="getJson" class="btn btn-success">GetJson</button>
+        <button type="button" id="getApi" class="btn btn-info">Get API data</button>
+    </div>
+    <div id="info">
+
+    </div>
+    <script>
+
+        document.getElementById('gettext').addEventListener('click', gettextt)
+        document.getElementById('getJson').addEventListener('click', getjson)
+
+        document.getElementById('getApi').addEventListener('click', getApii)
+
+        function gettextt() {
+            fetch('info.txt')
+                .then((e) => e.text())
+                .then((data) => {
+                    document.getElementById('info').innerHTML = data;
+                })
+        }
+
+        function getjson() {
+            fetch('info.json')
+                .then((e) => e.json())
+                .then((data) => {
+                    let output = '<h2>Fruits</h2>';
+                    data.forEach((user) => {
+                        output +=
+                            ` <ul class="list-group mb-3">
+                        <li class="list-group-item">Fruit : ${user.fruit} </li>
+                        <li class="list-group-item">Size : ${user.size} </li>
+                        <li class="list-group-item">Color : ${user.color} </li>
+                    </ul>
+                    `;
+                    });
+                    document.getElementById('info').innerHTML = output;
+                })
+        }
+
+        function getApii() {
+            fetch('https://jsonplaceholder.typicode.com/comments')
+                .then((e) => e.json())
+                .then((data) => {
+                    let output = '<h2>Comments</h2>';
+                    data.forEach((com) => {
+                        +6
+                        output +=
+                            ` 
+                    <div class="card card-body mb-3">
+                        <h5>${com.name}</h5>    
+                        <h5>${com.email}</h5>
+                        <p>${com.body}</p>    
+                    </div>
+                    `;
+                    });
+                    document.getElementById('info').innerHTML = output;
+                })
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+button
+{
+    width: 200px;
+    margin: 0 50px;
+}
+.cont
+{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#info
+{
+    margin: 50px 200px;
+    height: 100%;
+}
