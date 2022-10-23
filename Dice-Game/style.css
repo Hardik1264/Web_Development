@@ -1,0 +1,59 @@
+body {
+  background: linear-gradient(to right, #3f5efb, #fc466b);
+  transition: all 0.2s;
+}
+.head {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+.turn{
+    text-align: center;
+  font-size: 1.5rem;
+  color: black;
+ 
+}
+
+.p1_text,
+.p2_text {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: whitesmoke;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: auto;
+}
+.player1,
+.player2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  font-style: inherit;
+  background-color: azure;
+  border: 2px solid white;
+  border-radius: 24px;
+  width: 13rem;
+  height: 3rem;
+}
+.btn:hover{
+    background-color: rgb(48, 48, 230);
+    border: 1px solid gray;
+    color: white;
+}
+img {
+  width: 50%;
+}
