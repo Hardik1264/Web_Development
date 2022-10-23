@@ -1,0 +1,84 @@
+@import url('http://fonts.cdnfonts.com/css/frijole');
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset {
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 20px;
+    font-weight: bolder;
+    height: 40px;
+    width: 100px;
+    color: white;
+}
+#reset:hover{
+    background: red;
+    background: linear-gradient(rgb(12, 12, 12), rgb(0, 255, 225));
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
+.main{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background: red;
+    background: linear-gradient(rgb(12, 12, 12), rgb(0, 255, 225));
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.container{ 
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.info {
+    font-size: 22px;
+    font-family: 'Frijole', sans-serif; 
+    text-shadow: 5px 5px 5px grey;   
+}
+.gameinfo{
+    margin-top: 40px;
+    text-align: center;
+    padding: 0 34px;
+    font-size: 30px;
+    font-weight: bolder;
+}
