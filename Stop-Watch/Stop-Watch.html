@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Stop-Watch.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="watch">
+            <div class="outer">
+                <div class="inner">
+                    <span class="text hour">00 :</span>
+                    <span class="text minute">&nbsp;00 :</span>
+                    <span class="text second">&nbsp;00 </span>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="start">Start</button>
+                <button class="stop">Stop</button>
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let start = document.querySelector(".start");
+        let stop = document.querySelector(".stop");
+        let reset = document.querySelector(".reset");
+        let hours = document.querySelector(".hour");
+        let mintues = document.querySelector(".minute");
+        let seconds = document.querySelector(".second");
+        let hour = 0;
+        let minute = 0;
+        let second = 0;
+        let interval;
+        start.addEventListener("click", function () {
+            interval = setInterval(function () {
+                if (second < 59) {
+                    second += 1;
+                    seconds.innerHTML = second < 10 ? "0" + second : second;
+                }
+                else {
+                    second = 0;
+                    seconds.innerHTML = second < 10 ? "0" + second : second;
+                    if (minute < 59) {
+                        minute += 1;
+                        mintues.innerHTML = minute < 10 ? "0" + minute + ":" : minute + ":";
+                    }
+                    else {
+                        hour += 1;
+                        hours.innerHTML = hour < 10 ? "0" + hour + ":" : hour = ":";
+                    }
+                }
+            }, 1000);
+            start.style.pointerEvents = "none";
+        });
+
+        stop.addEventListener("click", function () {
+            clearInterval(interval);
+            start.style.pointerEvents = "visible";
+        });
+
+        reset.addEventListener("click", function () {
+            location.reload();
+        });
+    </script>
+</body>
+
+</html>
