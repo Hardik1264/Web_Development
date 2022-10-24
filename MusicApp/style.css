@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 65.5%;
+}
+.navbar{
+    background-color: black;
+    height: 4.9rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+.navlist li{
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+}
+.navlist li img{
+    width: 24px;
+    margin: 0px 10px;
+    border-radius: 12px;
+}
+/* container styling */
+.container{
+    background-image: url("https://source.unsplash.com/1600x900/?songs,music");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 78%;
+    margin:20px auto;
+    height: 70vh;
+    padding: 10px;
+}
+.bottom{
+    position:relative;
+    /* background-color: rgb(167, 120, 51) ; */
+    background-color: black;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#progressbar{
+    width: 75%;
+    margin-bottom:15px ;
+    height: 25px;
+    /* transition-duration: 10s; */
+    transition-timing-function: linear;
+}
+/* songscontainer */
+.songscontainer{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    /* color: white; */
+    background-color: white;
+    padding: 9px 20px;
+    margin:10px auto;
+    border-radius: 15px;
+}
+.pic{
+ width: 20px;
+ transform: scale(120%);
+    border-radius: 50%;
+}
+/* controlpanel styling */
+.controlpanel{
+    display: flex;
+
+}
+.controlpanel i{
+    margin: 0 7px;
+    font-size: 3rem;
+    color: white;
+}
+
+/* .songcontainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     color: white; 
+    height: 70vh;
+    background-color: white;
+}
+ .songcontainer img{
+    margin-top: 100px;
+    height: 150px;
+    border-radius: 0%;
+    width: 200px;
+}
+.name{
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+} */ 
+.name{
+    font-size: 1.5rem;
+}
+.songscontainer i{
+    font-size: 1.7rem;
+}
+.fixes{
+    display: flex;
+}
+.fixes p{
+    margin-right: 10px;
+}
+
+@media(max-width:800px){
+    html{
+        font-size: 55%;
+    }
+    .container{
+        width: 95%;
+    }
+    .songscontainer{
+        width: 90%;
+    }
+}
