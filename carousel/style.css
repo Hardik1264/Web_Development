@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    text-transform: capitalize;
+    transition: all .7s;
+}
+html{
+    font-size: 65.5%;
+}
+.header{
+    padding: 0 9%;  
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    box-shadow: .1rem .1rem .1rem .1rem lightgrey;
+}
+.header .logo{
+    margin-right: auto;
+    padding: .7rem;
+}
+.header .logo .logo_name{
+    font-size: 3rem;
+}
+.header ul{
+    display: flex;
+}
+.header ul li{
+    padding: 1rem 1.5rem;
+}
+.header ul li:hover{
+    background-color: lightgrey;
+}
+.header ul li .link{
+    font-size: 1.5rem;
+}
+.header .icons i{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    display: none;
+}
+.home{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+}
+h3{
+    color: white;
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    border: 1px solid grey;
+    margin-left: 200%;
+}
+.slide_1{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+.slide_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    background-color: blueviolet;
+}
+.slide_3{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+
+.slide.active{
+    margin: 0px;
+}
+.slide.next {
+    margin-left: -200%;
+}
+
+.slide.last{
+    margin-left: 400%;
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+}
+
+/* media query */
+@media (max-width:770px){
+    .header{
+        position: relative;
+        padding: 1rem 4%;
+    }
+    
+    .navbar{
+        display: none;
+        position: absolute;
+        top: 100%;
+        z-index: 100;
+        width: 100%;
+        left: 0%;
+        padding: 1rem 4%;
+        background-color: white;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .header .icons i{
+        display: block;
+    }
+    .navbar ul{
+        flex-direction: column;
+    }
+    .navbar ul li{
+        width: 100%;
+        /* display: block; */
+    }
+
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width:461px){
+    html{
+        font-size: 50%;
+    }
+}
