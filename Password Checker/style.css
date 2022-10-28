@@ -1,21 +1,49 @@
-*
-{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 body
 {
     font-family: 'Roboto', sans-serif;
+    
 }
+
+.navbar-items{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    background-color: rgb(109, 179, 6);
+    color: white !important;
+    
+}
+.navbar-brand-text{
+    color: white;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.list-links{
+    list-style-type: none;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .cont
 {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 200px 0;
+    background-image: url("https://img.freepik.com/free-vector/matrix-style-binary-code-digital-background-with-falling-numbers_1017-25336.jpg?w=740&t=st=1666566510~exp=1666567110~hmac=8dcc404b261084af9fbb43fd6cb8b913e571ae3df04a29032f1ccb0be01a75f9");
+    
+    
 }
 input
 {
